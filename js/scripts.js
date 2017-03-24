@@ -1,4 +1,15 @@
 // YOUR SCRIPTS GO HERE
+
+// Sidr Drawer
+// call Sidr Plugin. Toggle by Default
+$('#sidr-show-hide').sidr();
+
+// Close from inside
+$('#close').sidr({
+  method: 'close'
+})
+
+//Simple Weather
 $.simpleWeather({
   location: 98926,
   unit: 'f',

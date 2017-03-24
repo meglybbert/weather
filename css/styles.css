@@ -1,52 +1,61 @@
-/********************
-YOUR STYLES
-*******************/
-.city {
-  color: blue;
+@import url("https://fonts.googleapis.com/css?family=Poppins:300|VT323");
+body {
+  background: #383a3a;
 }
 
-.state {
-  color: purple;
+#sidr-show-hide {
+  padding: 1em;
+  font-family: "VT323", monospace;
 }
 
-.temp {
-  color: maroon;
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
-
-
-/********************
-MEDIA QUERIES
-*******************/
-/* Mobile: 320px = 20em */
-@media screen and (min-width: 20em) { 
-
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Mobile Size";
-  }
-  
+.sidr {
+  display: block;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  z-index: 999999;
+  width: 16em;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #383a3a;
+}
+.sidr.left {
+  left: -16em;
+  right: auto;
+}
+.sidr #close {
+  float: right;
+  padding: .5em .5em 0 0;
+  color: #fff;
+  font-family: "VT323", monospace;
+  font-size: 2em;
+}
+.sidr ul {
+  font-family: "Poppins", sans-serif;
+  list-style-type: none;
+  text-align: right;
+  padding-right: 1em;
+  text-color: #fff;
+  position: relative;
+  top: -40px;
+}
+.sidr li a {
+  font-size: 2.5em;
+  line-height: 1.5em;
 }
 
-/* Tablet:  768px = 160em */
-@media screen and (min-width: 48em)  {
-
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Tablet Size";
-  }
-
+section {
+  min-height: 20em;
+  width: 100%;
+  position: absolute;
+  background: #252626;
 }
 
-/* Desktop: 1280px = 80em */
-@media screen and (min-width: 80em) { 
-  
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Desktop Size";
-  }
-
+:target {
+  z-index: 1;
 }
