@@ -79,13 +79,13 @@
               weather.heatindex = result.item.condition.temp;
             }
 
-            /*if(result.item.condition.code == '3200') {
+            if(result.item.condition.code == '3200') {
               weather.thumbnail = image404;
               weather.image = image404;
             } else {
               weather.thumbnail = 'https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/' + result.item.condition.code + 'ds.png';
               weather.image = 'https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/' + result.item.condition.code + 'd.png';
-            }*/
+            }
 
             weather.alt = {temp: getAltTemp(options.unit, result.item.condition.temp), high: getAltTemp(options.unit, result.item.forecast[0].high), low: getAltTemp(options.unit, result.item.forecast[0].low)};
             if(options.unit === 'f') {
@@ -99,13 +99,13 @@
               forecast = result.item.forecast[i];
               forecast.alt = {high: getAltTemp(options.unit, result.item.forecast[i].high), low: getAltTemp(options.unit, result.item.forecast[i].low)};
 
-              /*if(result.item.forecast[i].code == "3200") {
+              if(result.item.forecast[i].code == "3200") {
                 forecast.thumbnail = image404;
                 forecast.image = image404;
               } else {
                 forecast.thumbnail = 'https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/' + result.item.forecast[i].code + 'ds.png';
                 forecast.image = 'https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/' + result.item.forecast[i].code + 'd.png';
-              }*/
+              }
 
               weather.forecast.push(forecast);
             }
