@@ -261,8 +261,8 @@ $.simpleWeather({
 });
 
 //Hide button after click
-$("button").click(function(){
-    $("button").hide();
+$(".iamhere").click(function(){
+    $(".iamhere").hide();
 });
 
    
