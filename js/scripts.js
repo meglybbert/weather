@@ -151,7 +151,7 @@ $.simpleWeather({
     $('#three .day0 .low').text(weather.low);
     $('#three .day0 .high').text(weather.high);
     $('#three .day0 .humidity').text(weather.humidity);
-    $('#three .day0 img').attr('src', weather.image);
+    $('#three .day0 img').attr(src:'/img/'+weather.code+'.gif');
     
     // forecast Day One
     $('#three .day1 .low').text(weather.forecast[1].low);
