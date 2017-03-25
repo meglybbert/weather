@@ -83,8 +83,8 @@
               weather.thumbnail = image404;
               weather.image = image404;
             } else {
-              weather.thumbnail = '../img/' + result.item.condition.code + '.gif';
-              weather.image = '../img/' + result.item.condition.code + '.gif';
+              weather.thumbnail = '/img/' + result.item.condition.code + '.gif';
+              weather.image = '/img/' + result.item.condition.code + '.gif';
             }
 
             weather.alt = {temp: getAltTemp(options.unit, result.item.condition.temp), high: getAltTemp(options.unit, result.item.forecast[0].high), low: getAltTemp(options.unit, result.item.forecast[0].low)};
@@ -103,8 +103,8 @@
                 forecast.thumbnail = image404;
                 forecast.image = image404;
               } else {
-                forecast.thumbnail = '../img/' + result.item.forecast[i].code + '.gif';
-                forecast.image = '../img/' + result.item.forecast[i].code + '.gif';
+                forecast.thumbnail = '/img/' + result.item.forecast[i].code + '.gif';
+                forecast.image = '/img/' + result.item.forecast[i].code + '.gif';
               }
 
               weather.forecast.push(forecast);
