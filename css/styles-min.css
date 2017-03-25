@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300|VT323");
 body {
-  background: #383a3a;
-}
+  background: #383a3a; }
 
 #sidr-show-hide {
   padding: 1em;
@@ -9,13 +8,11 @@ body {
   top: -.4em;
   font-family: "VT323", monospace;
   font-size: 1.5em;
-  z-index: 2;
-}
+  z-index: 2; }
 
 a {
   text-decoration: none;
-  color: #fff;
-}
+  color: #fff; }
 
 .sidr {
   display: block;
@@ -26,53 +23,49 @@ a {
   width: 16em;
   overflow-x: hidden;
   overflow-y: auto;
-  background: #383a3a;
-}
+  background: #383a3a; }
+
 .sidr.left {
   left: -16em;
-  right: auto;
-}
+  right: auto; }
+
 .sidr #close {
   float: right;
   padding: .6em 1em 0 0;
   color: #fff;
   font-family: "VT323", monospace;
-  font-size: 1.5em;
-}
+  font-size: 1.5em; }
+
 .sidr ul {
   font-family: "Poppins", sans-serif;
   list-style-type: none;
   text-align: right;
   padding-right: 1em;
   position: relative;
-  top: -40px;
-}
+  top: -40px; }
+
 .sidr li a {
   font-size: 2em;
   line-height: 1.5em;
   color: #00ecec;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 section {
   min-height: 20em;
   width: 100%;
   position: absolute;
   top: 0;
-  background: #383a3a;
-}
+  background: #383a3a; }
 
 :target {
-  z-index: 1;
-}
+  z-index: 1; }
 
 h3 {
   float: right;
   padding-right: 1em;
   font-family: "Poppins", sans-serif;
   color: #00ecec;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 button {
   width: 100%;
@@ -84,37 +77,38 @@ button {
   display: inline-block;
   margin-top: .8em;
   padding-top: .8em;
-  padding-bottom: .6em;
-}
+  padding-bottom: .6em; }
+
 button a {
-  color: #383a3a;
-}
+  color: #383a3a; }
 
 figure {
-  text-align: center;
-}
+  text-align: center; }
 
 figure:nth-child(2) {
-  padding-top: 3em;
-}
+  padding-top: 3em; }
 
 figcaption {
   margin: auto;
   font-family: "VT323", monospace;
   color: #fff;
-  font-size: 1.4em;
-}
+  font-size: 1.4em; }
+
 figcaption ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   list-style-type: none;
   padding: 0;
-  justify-content: space-around;
-}
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
 figcaption li:nth-child(even) {
-  color: #00ecec;
-}
+  color: #00ecec; }
 
 #two button, #three button, #four button, #five button {
-  margin-bottom: 2.6em;
-}
+  margin-bottom: 2.6em; }
