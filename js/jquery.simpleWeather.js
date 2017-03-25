@@ -84,7 +84,7 @@
               weather.image = image404;
             } else {
               weather.thumbnail = '/img/' + result.item.condition.code + '.gif';
-              weather.image = '/img/' + result.item.condition.code + '.gif';
+              weather.image = '../../img/' + result.item.condition.code + '.gif';
             }
 
             weather.alt = {temp: getAltTemp(options.unit, result.item.condition.temp), high: getAltTemp(options.unit, result.item.forecast[0].high), low: getAltTemp(options.unit, result.item.forecast[0].low)};
