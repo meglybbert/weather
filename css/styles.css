@@ -59,7 +59,7 @@ section {
   width: 100%;
   position: absolute;
   top: 0;
-  background: #383a3a;
+  background: #252626;
 }
 
 :target {
@@ -67,11 +67,18 @@ section {
 }
 
 h3 {
-  float: right;
-  padding-right: 1em;
+  text-align: right;
+  padding: 1em;
   font-family: "Poppins", sans-serif;
   color: #00ecec;
   text-transform: uppercase;
+  background-color: #383a3a;
+  box-shadow: 3px 3px 3px #202021;
+}
+
+#cheneyTop, #spokaneTop, #mosesTop, #samuelsTop, #hereTop {
+  position: relative;
+  top: -1em;
 }
 
 button {
@@ -83,15 +90,16 @@ button {
   font-size: 1em;
   display: inline-block;
   margin-top: .8em;
-  padding-top: .8em;
-  padding-bottom: .6em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 button a {
   color: #383a3a;
+  font-size: 1.2em;
 }
 
-figure {
-  text-align: center;
+.iamhere {
+  font-size: 1.2em;
 }
 
 figure:nth-child(2) {
@@ -115,6 +123,11 @@ figcaption li:nth-child(even) {
   color: #00ecec;
 }
 
-#two button, #three button, #four button, #five button {
-  margin-bottom: 2.6em;
+#one button {
+  margin-bottom: 3em;
+}
+
+figure {
+  text-align: center;
+  clear: right;
 }

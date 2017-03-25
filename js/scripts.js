@@ -1,6 +1,3 @@
-// https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js
-// https://cdnjs.cloudflare.com/ajax/libs/sidr/2.2.1/jquery.sidr.min.js
-
 // Sidr Drawer
 // call Sidr Plugin. Toggle by Default
 $('#sidr-show-hide').sidr();
@@ -76,21 +73,25 @@ $.simpleWeather({
     $('#one .day1 .low').text(weather.forecast[1].low);
     $('#one .day1 .high').text(weather.forecast[1].high);
     $('#one .day1 img').attr('src', weather.forecast[1].image);
-    
+    $('#one .dayName1').text(weather.forecast[1].day);
+ 
     //forecast Day Two
     $('#one .day2 .low').text(weather.forecast[2].low);
     $('#one .day2 .high').text(weather.forecast[2].high);
     $('#one .day2 img').attr('src', weather.forecast[2].image);
+    $('#one .dayName2').text(weather.forecast[2].day);
     
     //forecast Day Three
     $('#one .day3 .low').text(weather.forecast[3].low);
     $('#one .day3 .high').text(weather.forecast[3].high);
     $('#one .day3 img').attr('src', weather.forecast[3].image);
+    $('#one .dayName3').text(weather.forecast[3].day);
 
     //forecast Day Four
     $('#one .day4 .low').text(weather.forecast[4].low);
     $('#one .day4 .high').text(weather.forecast[4].high);
     $('#one .day4 img').attr('src', weather.forecast[4].image);
+    $('#one .dayName4').text(weather.forecast[4].day);
     
     console.log(weather.forecast[0].text);
   },
@@ -117,21 +118,25 @@ $.simpleWeather({
     $('#two .day1 .low').text(weather.forecast[1].low);
     $('#two .day1 .high').text(weather.forecast[1].high);
     $('#two .day1 img').attr('src', weather.forecast[1].image);
+    $('#two .dayName1').text(weather.forecast[1].day);
     
     //forecast Day Two
     $('#two .day2 .low').text(weather.forecast[2].low);
     $('#two .day2 .high').text(weather.forecast[2].high);
     $('#two .day2 img').attr('src', weather.forecast[2].image);
+    $('#two .dayName2').text(weather.forecast[2].day);
     
     //forecast Day Three
     $('#two .day3 .low').text(weather.forecast[3].low);
     $('#two .day3 .high').text(weather.forecast[3].high);
     $('#two .day3 img').attr('src', weather.forecast[3].image);
+    $('#two .dayName3').text(weather.forecast[3].day);
     
     //forecast Day Four
     $('#two .day4 .low').text(weather.forecast[4].low);
     $('#two .day4 .high').text(weather.forecast[4].high);
     $('#two .day4 img').attr('src', weather.forecast[4].image);
+    $('#two .dayName4').text(weather.forecast[4].day);
     
     console.log(weather.forecast[0].text);
   },
@@ -151,27 +156,31 @@ $.simpleWeather({
     $('#three .day0 .low').text(weather.low);
     $('#three .day0 .high').text(weather.high);
     $('#three .day0 .humidity').text(weather.humidity);
-    $('#three .day0 img').attr('src','/img/'+weather.code+'.gif');
+    $('#three .day0 img').attr('src', weather.image);
     
     // forecast Day One
     $('#three .day1 .low').text(weather.forecast[1].low);
     $('#three .day1 .high').text(weather.forecast[1].high);
     $('#three .day1 img').attr('src', weather.forecast[1].image);
+    $('#three .dayName1').text(weather.forecast[1].day);
     
     //forecast Day Two
     $('#three .day2 .low').text(weather.forecast[2].low);
     $('#three .day2 .high').text(weather.forecast[2].high);
     $('#three .day2 img').attr('src', weather.forecast[2].image);
+    $('#three .dayName2').text(weather.forecast[2].day);
     
     //forecast Day Three
     $('#three .day3 .low').text(weather.forecast[3].low);
     $('#three .day3 .high').text(weather.forecast[3].high);
     $('#three .day3 img').attr('src', weather.forecast[3].image);
+    $('#three .dayName3').text(weather.forecast[3].day);
     
     //forecast Day Four
     $('#three .day4 .low').text(weather.forecast[4].low);
     $('#three .day4 .high').text(weather.forecast[4].high);
     $('#three .day4 img').attr('src', weather.forecast[4].image);
+    $('#three .dayName4').text(weather.forecast[4].day);
     
     console.log(weather.forecast[0].text);
   },
@@ -197,21 +206,25 @@ $.simpleWeather({
     $('#four .day1 .low').text(weather.forecast[1].low);
     $('#four .day1 .high').text(weather.forecast[1].high);
     $('#four .day1 img').attr('src', weather.forecast[1].image);
+    $('#four .dayName1').text(weather.forecast[1].day);
     
     //forecast Day Two
     $('#four .day2 .low').text(weather.forecast[2].low);
     $('#four .day2 .high').text(weather.forecast[2].high);
     $('#four .day2 img').attr('src', weather.forecast[2].image);
+    $('#four .dayName2').text(weather.forecast[2].day);
     
     //forecast Day Three
     $('#four .day3 .low').text(weather.forecast[3].low);
     $('#four .day3 .high').text(weather.forecast[3].high);
     $('#four .day3 img').attr('src', weather.forecast[3].image);
+    $('#four .dayName3').text(weather.forecast[3].day);
     
     //forecast Day Four
     $('#four .day4 .low').text(weather.forecast[4].low);
     $('#four .day4 .high').text(weather.forecast[4].high);
     $('#four .day4 img').attr('src', weather.forecast[4].image);
+    $('#four .dayName4').text(weather.forecast[4].day);
     
     console.log(weather.forecast[0].text);
   },
@@ -237,21 +250,25 @@ $.simpleWeather({
     $('#five .day1 .low').text(weather.forecast[1].low);
     $('#five .day1 .high').text(weather.forecast[1].high);
     $('#five .day1 img').attr('src', weather.forecast[1].image);
+    $('#five .dayName1').text(weather.forecast[1].day);
     
     //forecast Day Two
     $('#five .day2 .low').text(weather.forecast[2].low);
     $('#five .day2 .high').text(weather.forecast[2].high);
     $('#five .day2 img').attr('src', weather.forecast[2].image);
+    ('#five .dayName2').text(weather.forecast[2].day);
     
     //forecast Day Three
     $('#five .day3 .low').text(weather.forecast[3].low);
     $('#five .day3 .high').text(weather.forecast[3].high);
     $('#five .day3 img').attr('src', weather.forecast[3].image);
+    ('#five .dayName3').text(weather.forecast[3].day);
     
     //forecast Day Four
     $('#five .day4 .low').text(weather.forecast[4].low);
     $('#five .day4 .high').text(weather.forecast[4].high);
     $('#five .day4 img').attr('src', weather.forecast[4].image);
+    ('#five .dayName4').text(weather.forecast[4].day);
     
     console.log(weather.forecast[0].text);
   },
